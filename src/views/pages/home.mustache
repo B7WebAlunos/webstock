@@ -1,0 +1,70 @@
+{{>partials/header}}
+<!--
+<ul>
+    {{#product}}
+        <li>{{nome}}</li>
+    {{/product}}
+</ul>
+-->
+<main>
+<section class="container">
+
+    <div class="acao">
+
+        <div class="filtro">
+
+            <form action="" method="POST">
+                <label for="filtro">Pesquisar</label>
+                <input type="text" name="filtro" id="filtro">
+
+                <input type="button" id="busca">
+
+            </form>
+
+        </div>
+
+        <div class="botao">
+
+            <button aria-label="ADICIONAR PRODUTO"></button>
+
+        </div>
+
+    </div>
+    <div class="tabela">
+        <table style="border: 0">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ID<div class="arrowdown"></div></th>
+                    <th>Nome<div class="arrowdown"></div></th>
+                    <th>Preço<div class="arrowdown"></div></th>
+                    <th>Quantidade<div class="arrowdown"></div></th>
+                    <th>Remover<div class="arrowdown"></div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./assets/midia/img/products/racao-cao-05-removebg.png" alt="RAÇÃO"></td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>352</td>
+                    <td><span><img src="./assets/midia/img/icons/trash.png" alt="DELETE"></span></td> 
+                    </tr>
+
+                    <tr>
+                    <td><img src="./assets/midia/img/products/racao-cao-05-removebg.png" alt="RAÇÃO"></td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>23</td>
+                    <td><span><img src="./assets/midia/img/icons/trash.png" alt="DELETE"></span></td> 
+                    </tr>
+            </tbody>
+        </table>
+
+    </div>
+        
+</section>
+</main>
+{{>partials/footer}}

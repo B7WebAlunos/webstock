@@ -1,0 +1,139 @@
+$color1: #26A69A;
+
+main
+{   
+    width: 90%;
+    height: auto;
+    min-height: 84vh;
+    margin: auto;
+    padding-top: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acao
+{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .filtro
+    {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        form
+        {
+            display: flex;
+
+            label
+            {
+                margin: auto;
+                margin-right: 20px;
+                font-size: 20px;
+            }
+
+            #filtro
+            {
+                width: 287px;
+                height: 48px;
+                background-color: $color1;
+                border: 0px;
+                outline: 0;
+                font-size: 16px;
+                color: #FFF;
+                padding-left: 25px;
+            }
+            
+            #busca
+            {
+                width: 60px;
+                background-color: $color1;
+                border: 0px;
+                outline: 0;
+                font-size: 16px;
+                color: #FFF;
+                background-image: url(../midia/img/icons/lupa-icon.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    
+    .botao
+    {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        button
+        {
+            width: 48px;
+            height: 48px;
+            border-radius: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0px;
+            background-color: $color1;
+            background-image: url(../midia/img/icons/add-icon.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.tabela table
+{
+    width: 100%;
+    border-collapse: collapse;
+
+    thead
+    {
+        height: 50px;
+        background-color: $color1;
+        color: #FFF;
+
+        tr th
+        {
+            font-size: 16px;
+    
+            .arrowdown
+            {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 18px;
+                border-right: 6px solid transparent;
+                border-left: 6px solid transparent;
+                border-top: 6px solid #FFF;
+            }
+        }
+    }
+
+    tbody
+    {
+        background-color: #FFF;
+
+        tr
+        {
+            border-top: 2px solid #A9A7A7;
+
+            td
+            {
+                text-align: center;
+            }
+        }
+
+        tr:last-child
+        {
+            border-bottom: 2px solid #A9A7A7;
+        }
+    }
+}
